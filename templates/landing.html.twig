@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container d-flex flex-column justify-content-center align-items-center landing_page">
+        <h3>Jūs esate:</h3>
+        <a class="btn w-50 btn-primary my-2" href="{{ path('client_page') }}">Klientas</a>
+        <a class="btn w-50 btn-primary my-2" href="{{ path('custumer_specialist_page') }}">Aptarnavimo specialistas</a>
+    </div>
+{% endblock %}
