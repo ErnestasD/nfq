@@ -14,10 +14,12 @@
         "symfony/orm-pack": "^1.0",
         "symfony/security-bundle": "4.3.*",
         "symfony/twig-bundle": "4.3.*",
+        "symfony/var-dumper": "4.3.*",
         "symfony/webpack-encore-bundle": "^1.6",
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.13"
     },
     "config": {
         "preferred-install": {

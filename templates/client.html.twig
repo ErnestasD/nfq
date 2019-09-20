@@ -1,5 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Kliento puslapis</h1>
+    <div class="container">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-3 py-4 text-center">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="d-flex justify-content-center align-items-center height70">
+            <div class="d-flex flex-column">
+                <h3>Įveskite savo vardą</h3>
+                <div>
+                    {{ form_start(form) }}
+                    {{ form_row(form.name, { 'attr' : { 'class' : 'w-100 my-3' } })}}
+                    {{ form_row(form.submit, { 'attr' : { 'class' : 'btn btn-success w-100' } }) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
