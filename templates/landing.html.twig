@@ -2,8 +2,9 @@
 
 {% block body %}
     <div class="container d-flex flex-column justify-content-center align-items-center height70">
-        <h3>Jūs esate:</h3>
-        <a class="btn w-50 btn-primary my-2" href="{{ path('client_page') }}">Klientas</a>
+        <a class="btn w-50 btn-primary my-2" href="{{ path('new_client_page') }}">Kliento įvestis</a>
         <a class="btn w-50 btn-primary my-2" href="{{ path('customer_specialist_page') }}">Aptarnavimo specialistas</a>
+        <a class="btn w-50 btn-primary my-2" href="{{ path('client_list_page') }}">Švieslentė</a>
+        <a class="btn w-50 btn-primary my-2" href="{{ path('client_page') }}">Kliento puslapis</a>
     </div>
 {% endblock %}
