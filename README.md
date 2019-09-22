@@ -1,0 +1,2 @@
+# nfq
+NFQ akademijos užduotis 
